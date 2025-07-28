@@ -23,6 +23,10 @@ main.d main.o: .././main.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  .././Librerias/ADC/ADC.h .././Librerias/PID/PID.h \
  .././Librerias/Timers/PWM0.h .././Librerias/BADNERAS/Banderas.h \
+ .././Librerias/Ventanas/Ventanas.h .././Librerias/Ventanas/../ADC/ADC.h \
+ .././Librerias/Ventanas/../LCD/lcd.h \
+ .././Librerias/Ventanas/../LCD/compiler.h \
+ .././Librerias/Ventanas/../BADNERAS/Banderas.h \
  .././Librerias/Interrupciones/Interrupciones.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
@@ -78,5 +82,15 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././Librerias/Timers/PWM0.h:
 
 .././Librerias/BADNERAS/Banderas.h:
+
+.././Librerias/Ventanas/Ventanas.h:
+
+.././Librerias/Ventanas/../ADC/ADC.h:
+
+.././Librerias/Ventanas/../LCD/lcd.h:
+
+.././Librerias/Ventanas/../LCD/compiler.h:
+
+.././Librerias/Ventanas/../BADNERAS/Banderas.h:
 
 .././Librerias/Interrupciones/Interrupciones.h:

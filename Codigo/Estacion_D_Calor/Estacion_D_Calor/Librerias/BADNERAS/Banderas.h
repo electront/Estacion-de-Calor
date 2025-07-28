@@ -13,6 +13,7 @@
 struct Banderas_S{
 	bool SeleccionPot;//false Temoeratura true Aire..
 	bool Estado;//false apagado true encendido..
+	bool Inicio;
 }Banderas;
 
 void Banderas_Inicializar();

@@ -95,9 +95,14 @@ void PID_Compute()
 		
 		// Calculamos la función de salida del PID.
 		Output = kp * error + ITerm- kd * dInput;
-		if(Output > outMax) Output = outMax;
-		else if(Output < outMin) Output = outMin;
-		
+		if(Output > outMax){
+			 Output = outMax;
+			 OCR0A++;
+		}
+		else if(Output < outMin){
+			 Output = outMin;
+			 OCR0A--;
+		}
 		// Guardamos el valor de algunas variables para el próximo recálculo.
 		lastInput = Input;
 	}
@@ -260,7 +265,6 @@ float PID_LowPassFilter(float input){
 	
 	return output;
 }
-
 
 // 
 // void PID_Control_Potencia(){

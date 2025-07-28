@@ -134,6 +134,12 @@
     <Compile Include="Librerias\BADNERAS\Banderas.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Librerias\EEPROM\EEPROM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Librerias\EEPROM\EEPROM.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Librerias\Interrupciones\Interrupciones.c">
       <SubType>compile</SubType>
     </Compile>
@@ -161,6 +167,12 @@
     <Compile Include="Librerias\Timers\PWM0.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Librerias\Ventanas\Ventanas.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Librerias\Ventanas\Ventanas.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
@@ -171,6 +183,8 @@
     <Folder Include="Librerias\ADC" />
     <Folder Include="Librerias\BADNERAS" />
     <Folder Include="Librerias\Interrupciones" />
+    <Folder Include="Librerias\EEPROM" />
+    <Folder Include="Librerias\Ventanas" />
     <Folder Include="Librerias\PID" />
     <Folder Include="Librerias\Timers" />
   </ItemGroup>

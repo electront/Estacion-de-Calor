@@ -10,10 +10,10 @@
 
 #ifndef PID_H_
 #define PID_H_
-
+#include <avr/io.h>
 #include <stdlib.h>
-//#include "../ADC/ADC.h"
 
+//#include "../ADC/ADC.h"
 
 void PID_Compute();
 void PID_SetTunings(double Kp, double Ki, double Kd);
@@ -23,8 +23,6 @@ void PID_SetOutputLimits(double Min, double Max);
 void PID_Initialize();
 void PID_SetMode(int Mode);
 void PID_SetControllerDirection(int Direction);
-
-void PID_Control_Potencia();
 
 void PID_TimerPID();
 float PID_LowPassFilter(float input);

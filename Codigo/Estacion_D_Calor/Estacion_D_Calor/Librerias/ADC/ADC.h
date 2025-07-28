@@ -13,6 +13,7 @@
 
 #define CantMuestras 10
 
+volatile uint16_t SeletAire, SeletTEMP, TEMP;
 
 void ADC_init(void);
 uint16_t ADC_read(uint8_t canal);

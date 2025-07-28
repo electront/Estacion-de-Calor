@@ -68,5 +68,6 @@ void lcd_cmd(char com);             // Envía una instrucción de comando al LCD
 char lcd_read(char RS);             // Lee un dato del LCD
 void lcd_write(char inst, char RS); // Escribe una instrucción en el LCD
 void lcd_nibble(char nibble);
+void lcd_custom_char(uint8_t location, uint8_t *charmap);
 //void ldelay_ms(unsigned char );
 

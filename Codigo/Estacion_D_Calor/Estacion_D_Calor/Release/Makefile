@@ -38,6 +38,8 @@ SUBDIRS :=  \
 ../Librerias/ADC \
 ../Librerias/BADNERAS \
 ../Librerias/Interrupciones \
+../Librerias/EEPROM \
+../Librerias/Ventanas \
 ../Librerias/PID \
 ../Librerias/Timers
 
@@ -46,10 +48,12 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../Librerias/ADC/ADC.c \
 ../Librerias/BADNERAS/Banderas.c \
+../Librerias/EEPROM/EEPROM.c \
 ../Librerias/Interrupciones/Interrupciones.c \
 ../Librerias/LCD/lcd.c \
 ../Librerias/PID/PID.c \
 ../Librerias/Timers/PWM0.c \
+../Librerias/Ventanas/Ventanas.c \
 ../main.c
 
 
@@ -62,37 +66,45 @@ ASM_SRCS +=
 OBJS +=  \
 Librerias/ADC/ADC.o \
 Librerias/BADNERAS/Banderas.o \
+Librerias/EEPROM/EEPROM.o \
 Librerias/Interrupciones/Interrupciones.o \
 Librerias/LCD/lcd.o \
 Librerias/PID/PID.o \
 Librerias/Timers/PWM0.o \
+Librerias/Ventanas/Ventanas.o \
 main.o
 
 OBJS_AS_ARGS +=  \
 Librerias/ADC/ADC.o \
 Librerias/BADNERAS/Banderas.o \
+Librerias/EEPROM/EEPROM.o \
 Librerias/Interrupciones/Interrupciones.o \
 Librerias/LCD/lcd.o \
 Librerias/PID/PID.o \
 Librerias/Timers/PWM0.o \
+Librerias/Ventanas/Ventanas.o \
 main.o
 
 C_DEPS +=  \
 Librerias/ADC/ADC.d \
 Librerias/BADNERAS/Banderas.d \
+Librerias/EEPROM/EEPROM.d \
 Librerias/Interrupciones/Interrupciones.d \
 Librerias/LCD/lcd.d \
 Librerias/PID/PID.d \
 Librerias/Timers/PWM0.d \
+Librerias/Ventanas/Ventanas.d \
 main.d
 
 C_DEPS_AS_ARGS +=  \
 Librerias/ADC/ADC.d \
 Librerias/BADNERAS/Banderas.d \
+Librerias/EEPROM/EEPROM.d \
 Librerias/Interrupciones/Interrupciones.d \
 Librerias/LCD/lcd.d \
 Librerias/PID/PID.d \
 Librerias/Timers/PWM0.d \
+Librerias/Ventanas/Ventanas.d \
 main.d
 
 OUTPUT_FILE_PATH +=Estacion_D_Calor.elf
@@ -123,6 +135,13 @@ Librerias/BADNERAS/Banderas.o: ../Librerias/BADNERAS/Banderas.c
 	@echo Finished building: $<
 	
 
+Librerias/EEPROM/EEPROM.o: ../Librerias/EEPROM/EEPROM.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega328p" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 Librerias/Interrupciones/Interrupciones.o: ../Librerias/Interrupciones/Interrupciones.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
@@ -145,6 +164,13 @@ Librerias/PID/PID.o: ../Librerias/PID/PID.c
 	
 
 Librerias/Timers/PWM0.o: ../Librerias/Timers/PWM0.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega328p" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+Librerias/Ventanas/Ventanas.o: ../Librerias/Ventanas/Ventanas.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega328p" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

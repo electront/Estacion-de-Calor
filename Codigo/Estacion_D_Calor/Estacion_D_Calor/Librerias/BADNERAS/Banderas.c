@@ -9,4 +9,5 @@
 void Banderas_Inicializar(){
 	Banderas.Estado = false;
 	Banderas.SeleccionPot = false;
+	Banderas.Inicio = false;
 }
