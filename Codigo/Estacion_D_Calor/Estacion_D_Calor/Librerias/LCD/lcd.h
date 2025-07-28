@@ -20,9 +20,9 @@
 // Se utilizará el nible alto del puerto escogido (ejem. PC4-DC4,...,PC7-DC7)
 
 
-#define  lcd_DATAout   PORTD      // Registro PORT del puerto
-#define  lcd_DATAin    PIND       // Registro PIN del puerto
-#define  lcd_DATAddr   DDRD       // Registro DDR del puerto
+#define  lcd_DATAout   PORTB      // Registro PORT del puerto
+#define  lcd_DATAin    PINB       // Registro PIN del puerto
+#define  lcd_DATAddr   DDRB       // Registro DDR del puerto
 
 // Define el puerto a donde se conectarán las líneas de control del LCD
 // E, RW y RS. Puede ser el mismo puerto del bus de datos.
@@ -34,9 +34,9 @@
 // Define los números de los pines del puerto anterior que corresponderán a 
 // las líneas E, RW y RS del LCD.
 
-#define  lcd_E         5          // Pin Enable
-#define  lcd_RW        7       // Pin Read/Write
-#define  lcd_RS        6          // Pin Register Select
+#define  lcd_E         0          // Pin Enable
+#define  lcd_RW        2       // Pin Read/Write
+#define  lcd_RS        1          // Pin Register Select
 
 //****************************************************************************
 //    CÓDIGOS DE COMANDO USUALES

@@ -21,8 +21,8 @@ main.d main.o: .././main.c \
  .././Librerias/LCD/lcd.h .././Librerias/LCD/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
- .././Librerias/ADC/ADC.h .././Librerias/Timers/PWM1.h \
- .././Librerias/BADNERAS/Banderas.h \
+ .././Librerias/ADC/ADC.h .././Librerias/PID/PID.h \
+ .././Librerias/Timers/PWM0.h .././Librerias/BADNERAS/Banderas.h \
  .././Librerias/Interrupciones/Interrupciones.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
@@ -73,7 +73,9 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 .././Librerias/ADC/ADC.h:
 
-.././Librerias/Timers/PWM1.h:
+.././Librerias/PID/PID.h:
+
+.././Librerias/Timers/PWM0.h:
 
 .././Librerias/BADNERAS/Banderas.h:
 

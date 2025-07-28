@@ -1,5 +1,5 @@
-Librerias/Timers/PWM1.d Librerias/Timers/PWM1.o: \
- ../Librerias/Timers/PWM1.c ../Librerias/Timers/PWM1.h \
+Librerias/Timers/PWM0.d Librerias/Timers/PWM0.o: \
+ ../Librerias/Timers/PWM0.c ../Librerias/Timers/PWM0.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -12,7 +12,7 @@ Librerias/Timers/PWM1.d Librerias/Timers/PWM1.o: \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h
 
-../Librerias/Timers/PWM1.h:
+../Librerias/Timers/PWM0.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 

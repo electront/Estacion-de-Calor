@@ -14,7 +14,8 @@
 
 #include "Librerias/LCD/lcd.h"
 #include "Librerias/ADC/ADC.h"
-#include "Librerias/Timers/PWM1.h"
+#include "Librerias/PID/PID.h"
+#include "Librerias/Timers/PWM0.h"
 #include "Librerias/BADNERAS/Banderas.h"
 #include "Librerias/Interrupciones/Interrupciones.h"
 
@@ -44,7 +45,8 @@ int main(void)
 	cli();
     lcd_init();
 	ADC_init();
-	PWM1_init();
+	PWM0_init();
+	PID_SetMode(1);
 	Interrupcion_Inicializar();
 	Banderas_Inicializar();
 	
@@ -56,10 +58,11 @@ int main(void)
 		
 		if(!Banderas.SeleccionPot) SeletTEMP = ADC_Selet_TEMP();
 		else SeletAire = ADC_Selet_AIRE();
-		
-		
+		 
 		if(Banderas.Estado){
-			 PWM1_dca(SeletAire , 1);
+		PWM0_dca(SeletTEMP , 1);	
+		PWM0_dcb(SeletAire , 1);
+		
 			
 			
 			

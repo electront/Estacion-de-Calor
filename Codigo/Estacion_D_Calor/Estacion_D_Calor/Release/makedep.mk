@@ -12,7 +12,7 @@ Librerias\LCD\lcd.c
 
 Librerias\PID\PID.c
 
-Librerias\Timers\PWM1.c
+Librerias\Timers\PWM0.c
 
 main.c
 

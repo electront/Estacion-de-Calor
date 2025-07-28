@@ -15,8 +15,8 @@
 #define INVERTING		0
 
 
-void PWM1_init(void);
-void PWM1_dca(uint8_t dc, uint8_t modo);
-void PWM1_dcb(uint8_t dc, uint8_t modo);
+void PWM0_init(void);
+void PWM0_dca(uint8_t dc, uint8_t modo);
+void PWM0_dcb(uint8_t dc, uint8_t modo);
 
 #endif /* PWM0_H_ */
