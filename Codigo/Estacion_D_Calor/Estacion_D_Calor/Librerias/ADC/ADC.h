@@ -2,7 +2,7 @@
  * ADC.h
  *
  * Created: 8/05/2022 18:50:39
- *  Author: carlo
+ *  Author: Alvaro
  */ 
 
 
@@ -17,9 +17,11 @@
 void ADC_init(void);
 uint16_t ADC_read(uint8_t canal);
 
-uint8_t ADC_Leer_POT_TEMP();
-uint8_t ADC_Leer_POT_AIRE();
+uint16_t ADC_Selet_AIRE();
+uint16_t ADC_Selet_TEMP();
+
 float ADC_Leer_TEMP();
+uint16_t ADC_Leer_Convertir_Escala(uint8_t canal_trabajo, uint16_t escala);
 
 
 

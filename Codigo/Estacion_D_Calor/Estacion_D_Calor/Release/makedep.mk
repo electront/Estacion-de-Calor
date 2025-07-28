@@ -4,7 +4,15 @@
 
 Librerias\ADC\ADC.c
 
+Librerias\BADNERAS\Banderas.c
+
+Librerias\Interrupciones\Interrupciones.c
+
 Librerias\LCD\lcd.c
+
+Librerias\PID\PID.c
+
+Librerias\Timers\PWM1.c
 
 main.c
 

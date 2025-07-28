@@ -21,22 +21,22 @@
 
 
 #define  lcd_DATAout   PORTD      // Registro PORT del puerto
-#define  lcd_DATAin    PIND      // Registro PIN del puerto
+#define  lcd_DATAin    PIND       // Registro PIN del puerto
 #define  lcd_DATAddr   DDRD       // Registro DDR del puerto
 
 // Define el puerto a donde se conectarán las líneas de control del LCD
 // E, RW y RS. Puede ser el mismo puerto del bus de datos.
 
-#define  lcd_CTRLout   PORTD       // Registro PORT del puerto
-#define  lcd_CTRLin    PIND       // Registro PIN del puerto
-#define  lcd_CTRLddr   DDRD       // Registro DDR del puerto
+#define  lcd_CTRLout   PORTB      // Registro PORT del puerto
+#define  lcd_CTRLin    PINB       // Registro PIN del puerto
+#define  lcd_CTRLddr   DDRB       // Registro DDR del puerto
 
 // Define los números de los pines del puerto anterior que corresponderán a 
 // las líneas E, RW y RS del LCD.
 
-#define  lcd_E         1          // Pin Enable
-#define  lcd_RW        2       // Pin Read/Write
-#define  lcd_RS        3          // Pin Register Select
+#define  lcd_E         5          // Pin Enable
+#define  lcd_RW        7       // Pin Read/Write
+#define  lcd_RS        6          // Pin Register Select
 
 //****************************************************************************
 //    CÓDIGOS DE COMANDO USUALES
